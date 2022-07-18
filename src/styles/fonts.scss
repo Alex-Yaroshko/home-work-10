@@ -1,0 +1,85 @@
+@mixin checkbox {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+}
+@mixin bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.start-title :nth-child(1) {
+    @include bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.start-title :nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2F2F2;
+}
+.start-button button {
+    @include bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+}
+
+/* RIGHT SECTION */
+.form__title h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 41px;
+    color: #121212;
+}
+.form-input input {
+    @include bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #989898;
+}
+.checkbox p {
+    @include checkbox;
+    color: #989898;
+    margin: 0;
+    padding-bottom:1px;
+}
+.checkbox a {
+    @include checkbox;
+    color: #121212;
+}
+.signup-btn button {
+    @include bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+}
+.join {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    & a {
+            color: #272730;
+            text-decoration: none;
+        }
+      
+    &_-margin {
+        margin: 35px 0 16px;
+    } 
+}
